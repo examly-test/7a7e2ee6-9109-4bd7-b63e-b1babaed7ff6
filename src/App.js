@@ -17,7 +17,7 @@ function App() {
 
 
     function gitHubUrlGen(userName, projectName, type, value) {
-      return 'https://api.github.com/repos/' + userName + '/' + projectName + '/' + type + '/' + value;
+      return 'https://api.github.com/repos/' + userName + '/' + projectName + '/' + type + '/';
     }
 
 
