@@ -61,13 +61,10 @@ function App() {
     const gitURL = 'https://github.com/neojarvis-testing/49a86f9b-0884-4c83-a8a2-2164fa0d2f5f/commit/7afa255c3f2f39293888906e1759cb3fd6bb9c42'
     const requestURL = prepareRequest(gitURL)
 
-    console.log('requestURL:::::', requestURL);
 
     const divHtml = divRef.current
-    console.log('divHtml:::::', divHtml);
     
     const diffString = await getDiff(requestURL)
-    console.log('diffString:::::', diffString);
     var configuration = {
       drawFileList: true,
       matching: 'lines'
